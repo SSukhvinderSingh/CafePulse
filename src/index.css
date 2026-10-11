@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-espresso-950 text-crema-100 font-sans antialiased;
+  background-image: radial-gradient(ellipse at 50% 0%, #2a1a12 0%, #120d0a 75%);
+  min-height: 100vh;
+}
+
+:focus-visible { outline: 2px solid #e59546; outline-offset: 2px; }
+
+.card {
+  @apply rounded-2xl border border-espresso-800 bg-espresso-900/90 p-4 shadow-xl shadow-black/30 backdrop-blur-md transition-all;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-1.5 rounded-xl bg-amber-500 px-4 py-2.5 text-sm font-bold text-espresso-950 shadow-md shadow-amber-950/40 transition hover:bg-amber-400 active:bg-amber-600 disabled:opacity-40 disabled:cursor-not-allowed;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-1.5 rounded-xl border border-espresso-700 bg-espresso-850/60 px-3.5 py-2 text-sm font-medium text-crema-100 transition hover:bg-espresso-800 hover:border-espresso-700;
+}
+
+.label {
+  @apply font-mono text-[11px] font-semibold uppercase tracking-wider text-crema-300;
+}
